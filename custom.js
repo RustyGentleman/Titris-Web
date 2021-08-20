@@ -9,7 +9,10 @@ function Script(){
   setInterval(Update, 1000);
   ;
   function Update(){
-    if (canvas == null) break
+    if (canvas == null){
+      canvas = document.getElementById("unity-canvas")
+      break
+    }
     console.log("Updating.")
     vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
