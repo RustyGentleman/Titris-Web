@@ -1,5 +1,4 @@
-window.addEventListener("load", function(){
-    // ....
+function Script(){
     console.log("Starting script.")
     var vw, vh, ratio
     var correctRatio = 16/9
@@ -24,5 +23,5 @@ window.addEventListener("load", function(){
         canvas.style.height = vh+"px"
         canvas.style.width = vh*correctRatio+"px"
       }
-  }
-});
+    }
+}
