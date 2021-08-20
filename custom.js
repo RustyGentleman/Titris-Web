@@ -1,12 +1,11 @@
+var vw, vh, ratio
+var correctRatio = 16/9
+var canvas = document.getElementById("unity-canvas")
 function Script(){
   console.log("Starting script.")
-  var vw, vh, ratio
-  var correctRatio = 16/9
-  var canvas = document.getElementById("unity-canvas")
   while (document.getElementById("unity-footer")) document.getElementById("unity-footer").remove();
   Update();
   setInterval(Update, 1000);
-  ;
 }
 function Update(){
   if (canvas == null){
