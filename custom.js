@@ -3,15 +3,15 @@ var correctRatio = 16/9
 var canvas = document.getElementById("unity-canvas")
 function Script(){
   console.log("Starting script.")
-  while (document.getElementById("unity-footer")) document.getElementById("unity-footer").remove();
   Update();
-  setInterval(Update, 1000);
+  setInterval(Update, 1000)
 }
 function Update(){
   if (canvas == null){
     canvas = document.getElementById("unity-canvas")
     return
   }
+  if (document.getElementById("unity-footer")) document.getElementById("unity-footer").remove();
   console.log("Updating.")
   vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
   vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
