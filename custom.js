@@ -1,4 +1,4 @@
-window.onload = Script;
+document.addEventListener('DOMContentLoaded', Script, false);
 function Script(){
   console.log("Starting script.")
   var vw, vh, ratio
