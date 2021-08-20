@@ -11,7 +11,7 @@ function Script(){
   function Update(){
     if (canvas == null){
       canvas = document.getElementById("unity-canvas")
-      break
+      return
     }
     console.log("Updating.")
     vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
